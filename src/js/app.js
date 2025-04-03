@@ -41,14 +41,26 @@ function render(variables = {}) {
             ${variables.role === null ? `role` : variables.role}
           </h2>
           <h3>
-            ${variables.country === "null" ? `country` : variables.country},
+            ${variables.country === null ? `country` : variables.country},
             ${variables.city === "null" ? `city` : variables.city}
           </h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+          <ul class=${
+            variables.socialMediaPosition === null
+              ? `position`
+              : variables.socialMediaPosition
+          }>
+            <li><a id='twitter' href="https://x.com/${
+              variables.twitter === null ? `twitter` : variables.twitter
+            }"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${
+              variables.github === null ? `github` : variables.github
+            }"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${
+              variables.linkedin === null ? `linkedin` : variables.linkedin
+            }"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${
+              variables.instagram === null ? `instagram` : variables.instagram
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
