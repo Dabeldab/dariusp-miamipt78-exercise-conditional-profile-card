@@ -34,8 +34,8 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>
-            ${variables.name === null ? `First` : variables.name}
-            ${variables.lastName === null ? `Last Name` : variables.lastName}
+            ${variables.name === null ? `John` : variables.name}
+            ${variables.lastName === null ? `Doe` : variables.lastName}
           </h1>
           <h2>
             ${variables.role === null ? `Role` : variables.role}
@@ -76,9 +76,9 @@ window.onload = function() {
     // this is the image's url that will be used as a background for the profile cover
     background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL: "https://randomuser.me/api/portraits/men/53.jpg",
     // social media bar position (left or right)
-    socialMediaPosition: "position-left",
+    socialMediaPosition: "position-right",
     // social media usernames
     twitter: null,
     github: null,
