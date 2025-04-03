@@ -34,19 +34,19 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>
-            ${variables.name === null ? `first` : variables.name}
-            ${variables.lastName === null ? `last` : variables.lastName}
+            ${variables.name === null ? `First` : variables.name}
+            ${variables.lastName === null ? `Last Name` : variables.lastName}
           </h1>
           <h2>
-            ${variables.role === null ? `role` : variables.role}
+            ${variables.role === null ? `Role` : variables.role}
           </h2>
           <h3>
-            ${variables.country === null ? `country` : variables.country},
-            ${variables.city === "null" ? `city` : variables.city}
+            ${variables.country === null ? `Country` : variables.country},
+            ${variables.city === null ? `City` : variables.city}
           </h3>
           <ul class=${
             variables.socialMediaPosition === null
-              ? `position`
+              ? `Position`
               : variables.socialMediaPosition
           }>
             <li><a id='twitter' href="https://x.com/${
